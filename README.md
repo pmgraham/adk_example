@@ -1,6 +1,6 @@
 ## This is an example of how to configure an ADK AI Agent for deploying to Cloud Run.
 
-1. Build the agent and store in the agent directory. In this example `greeter_agent` is the agent directory.
+1. Build the agent and store in the agent directory. In this example `greeter_agent` is the agent directory. Be sure to rename the `.env_example` file to `.env`.
 
 2. Make sure all variables in the `.env` file and the `deploy.sh` file are updated with your Google Cloud information. Note: `us-central1` is the location in the script but you can update and use any supported Google Cloud region for this example.
 
