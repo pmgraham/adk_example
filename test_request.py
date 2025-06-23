@@ -1,6 +1,10 @@
-import requests
+# standard library imports
 import json
 import uuid
+
+# third party imports
+import requests
+
 
 # --- 1. Configuration ---
 BASE_URL = "https://cloud-run-url"
