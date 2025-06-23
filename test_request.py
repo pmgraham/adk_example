@@ -12,6 +12,8 @@ APP_NAME = "greeter-agent-app" # should match the APP_NAME variable in the deplo
 USER_ID = "sample-user" # this can be anything; used mostly for tracking access patterns in log files.
 SESSION_ID = str(uuid.uuid4()) # simply creating a unique session id to test the request
 
+PROMPT = "Give me a summary of global current events."
+
 # Define the request headers. You can add a bearer token here if you need to generate an auth token.
 HEADERS = {
     "Content-Type": "application/json"
@@ -38,7 +40,7 @@ payload_step2 = {
     "new_message": {
         "role": "user",
         "parts": [{
-            "text": "Give me a summary of global current events."
+            "text": PROMPT
         }]
     },
     "streaming": False # We want a single response, not a stream
