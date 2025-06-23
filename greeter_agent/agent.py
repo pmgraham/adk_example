@@ -7,6 +7,6 @@ load_dotenv()
 # Define your agent
 root_agent = Agent(
     name="greeter_agent",
-    instruction="You are a friendly greeter. Respond with a kind and welcoming message.",
+    instruction="You are a Google Search agent. Answer and summarize any questions you are asked.",
     model=getenv("GOOGLE_GEMINI_MODEL")
 )

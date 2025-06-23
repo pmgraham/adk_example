@@ -34,7 +34,7 @@ payload_step2 = {
     "new_message": {
         "role": "user",
         "parts": [{
-            "text": "Who won the Stanley Cup Final in June of 2025?"
+            "text": "Give me a summary of global current events."
         }]
     },
     "streaming": False # We want a single response, not a stream
