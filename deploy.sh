@@ -5,7 +5,7 @@ export GOOGLE_CLOUD_PROJECT="your-project-id"
 export GOOGLE_CLOUD_LOCATION="us-central1" # Example location
 
 # Set the path to your agent code directory
-export AGENT_PATH="./greeter_agent" # Assuming capital_agent is in the current directory
+export AGENT_PATH="./greeter_agent" # Assuming greeter_agent is in the current directory
 
 # Set a name for your Cloud Run service
 export SERVICE_NAME="greeter-test"
