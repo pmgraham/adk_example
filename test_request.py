@@ -1,6 +1,6 @@
 # standard library imports
 import json
-import uuid
+from uuid import uuid4
 
 # third party imports
 import requests
@@ -10,7 +10,7 @@ import requests
 BASE_URL = "https://cloud-run-url"
 APP_NAME = "greeter-agent-app" # should match the APP_NAME variable in the deploy.sh file or request will fail
 USER_ID = "sample-user" # this can be anything; used mostly for tracking access patterns in log files.
-SESSION_ID = str(uuid.uuid4()) # simply creating a unique session id to test the request
+SESSION_ID = str(uuid4()) # simply creating a unique session id to test the request
 
 PROMPT = "Give me a summary of global current events."
 
