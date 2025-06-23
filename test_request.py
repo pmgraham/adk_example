@@ -9,7 +9,7 @@ import requests
 # --- 1. Configuration ---
 BASE_URL = "https://cloud-run-url"
 APP_NAME = "greeter-agent-app" # should match the APP_NAME variable in the deploy.sh file or request will fail
-USER_ID = "sample-user"
+USER_ID = "sample-user" # this can be anything; used mostly for tracking access patterns in log files.
 SESSION_ID = str(uuid.uuid4()) # simply creating a unique session id to test the request
 
 # Define the request headers. You can add a bearer token here if you need to generate an auth token.
